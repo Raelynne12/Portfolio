@@ -16,12 +16,14 @@ export default function YoutubeHeader({ onSearch, showMain }) {
 const Head = styled.div`
   h2 {
     cursor: pointer;
-    //height: 80px;
+    &:hover {
+      color: #fff;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    color: #9d1b1b;
+    color: #08eaff;
     position: relative;
     font-size: clamp(70px, 4vw, 88px);
     margin-bottom: 230px;

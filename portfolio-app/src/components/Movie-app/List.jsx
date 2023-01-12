@@ -44,6 +44,11 @@ const Container = styled.div`
   margin: 100px auto;
 `;
 const Title = styled.h2`
+  p {
+    &:hover {
+      color: #fff;
+    }
+  }
   display: flex;
   flex-direction: row;
   font-size: clamp(40px, 4vw, 68px);

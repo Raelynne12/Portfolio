@@ -27,11 +27,11 @@ export default function AboutMe() {
       </div>
       <div className="spec">
         <div className="front-end">
-          <h3>STACK OF FRONTEND (USING THIS PAGE)</h3>
+          <h2>STACK OF FRONTEND</h2>
           <Stack></Stack>
         </div>
         <div className="certification">
-          <h3>CERTIFICATION</h3>
+          <h2>CERTIFICATION</h2>
           <Certification></Certification>
         </div>
       </div>
@@ -81,12 +81,6 @@ const About = styled.div`
     margin: 150px 80px 100px 250px;
     display: flex;
     flex-direction: row;
-    h3 {
-      font-size: 40px;
-      font-weight: bold;
-      color: #fff;
-      padding-left: 20px;
-    }
     p {
       font-size: 35px;
       font-weight: 900;
@@ -100,13 +94,30 @@ const About = styled.div`
       border: 7px solid #fff;
       width: 410px;
       margin-left: 200px;
+      background-color: #0000009d;
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        padding-left: 20px;
+        margin-top: 10px;
+      }
     }
     .front-end {
+      border: 7px solid #fff;
       padding: 30px 0px 30px 0px;
       margin: 30px 0px 30px 0px;
-      border: 7px solid #fff;
       margin-right: 100px;
       width: 1810px;
+      background-color: #0000009d;
+      color: #fff;
+      h2 {
+        font-size: 40px;
+        font-weight: bold;
+        color: #fff;
+        padding-left: 20px;
+        margin-top: 10px;
+      }
     }
   }
 `;

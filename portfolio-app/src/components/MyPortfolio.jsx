@@ -10,7 +10,7 @@ export default function MyPortfolio() {
           <Link to="/movie/popular">Movie App</Link>
         </div>
         <div className="youtube">
-          <Link to="/youtube">Youtube App</Link>
+          <Link to="/youtube">YouTube App</Link>
         </div>
         <div className="netflix">
           <Link to="/netflix">Netflix App</Link>
@@ -24,7 +24,7 @@ export default function MyPortfolio() {
           <Link to="/diary">Diary App</Link>
         </div>
         <div className="todolist">
-          <Link to="/todo">Todo List</Link>
+          <Link to="/todo">To Do List</Link>
         </div>
         <div className="voca">
           <Link to="/voca">Voca App</Link>
@@ -128,7 +128,7 @@ const High = styled.div`
   .crawling {
     animation: ball 3s ease-in infinite alternate;
     &:hover {
-      color: #fff;
+      font-size: 52px;
     }
     display: relative;
     justify-content: space-around;
@@ -139,7 +139,7 @@ const High = styled.div`
     background-position-x: -95px;
     background-position-y: -98px; */
     box-shadow: -55px 55px 55px rgba(0, 0, 0, 0.7);
-    color: #000;
+    color: #fff;
     height: 400px;
     width: 400px;
     margin: 0 auto;
@@ -147,7 +147,7 @@ const High = styled.div`
     align-items: center;
     align-content: flex-start;
     flex-wrap: wrap;
-    font-size: 50px;
+    font-size: 48px;
     line-height: 380px;
     border-radius: 2000px;
     text-decoration: underline;

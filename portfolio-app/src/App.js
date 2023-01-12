@@ -12,6 +12,7 @@ import SearchResult from "./components/Movie-app/SearchResult";
 import NowPlaying from "./components/Movie-app/NowPlaying";
 import YoutubeMain from "./components/Youtube-app/YoutubeMain";
 import MainCenter from "./components/Netflix-app/MainCenter";
+import Home from "./components/Mbti-app/Home";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="/search" element={<SearchResult></SearchResult>} />
           <Route path="/movie/now" element={<NowPlaying></NowPlaying>} />
           <Route path="/netflix" element={<MainCenter></MainCenter>} />
+          <Route path="/mbti" element={<Home></Home>} />
         </Routes>
         <Footer></Footer>
       </div>

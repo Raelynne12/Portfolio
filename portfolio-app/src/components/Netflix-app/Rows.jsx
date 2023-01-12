@@ -76,10 +76,11 @@ const Container = styled.section`
     width: 1400px;
   }
   h2 {
-    font-size: 56px;
+    font-size: 60px;
     margin-bottom: 50px;
     text-transform: capitalize;
-    color: #9e1111;
+    color: #f2f677;
+    letter-spacing: 5px;
     font-weight: 700;
   }
   .nav {

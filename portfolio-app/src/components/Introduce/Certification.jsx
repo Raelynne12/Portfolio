@@ -8,8 +8,8 @@ export default function Certification() {
         <li className="lists">
           <p>정보처리기사</p>
           <p>ADsP</p>
-          <p>TOEIC 870</p>
           <p>TOEIC Speaking 170(AL)</p>
+          <p>TOEIC 870</p>
           <p>한국사 1급</p>
           <p>컴퓨터활용능력 2급</p>
           <p>ITQ</p>
