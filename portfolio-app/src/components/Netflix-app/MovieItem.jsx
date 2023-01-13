@@ -127,6 +127,7 @@ const Container = styled.div`
       color: #000;
       box-sizing: border-box;
       padding: 20px;
+      padding-bottom: 30px;
       h2 {
         border-top: 5px dashed #000;
         padding-top: 14px;

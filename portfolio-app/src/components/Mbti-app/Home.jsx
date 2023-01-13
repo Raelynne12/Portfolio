@@ -8,13 +8,20 @@ export default function Home() {
 
   return (
     <Container>
+      <Header>MBTI TEST</Header>
       <Title>
         <h2 className="title">심리테스트</h2>
       </Title>
       <LogoImg>
         <img src={logo} alt="" style={{ width: "40%", borderRadius: "15%" }} />
       </LogoImg>
-      <Button></Button>
+      <Button
+        onClick={() => {
+          navigate("/mbti/question");
+        }}
+      >
+        Game Start!
+      </Button>
     </Container>
   );
 }
@@ -41,9 +48,20 @@ const LogoImg = styled.div`
 `;
 
 const Container = styled.div`
-  //display: flex;
   height: 100%;
   background-color: #ecaedf;
+  justify-content: center;
+  align-items: center;
+`;
+const Header = styled.header`
+  display: flex;
+  background-color: #f172cb;
+  border-bottom: 3px solid #000;
+  font-size: 25px;
+  color: #000;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
 `;
 const Title = styled.h2`
   align-items: center;

@@ -13,6 +13,8 @@ import NowPlaying from "./components/Movie-app/NowPlaying";
 import YoutubeMain from "./components/Youtube-app/YoutubeMain";
 import MainCenter from "./components/Netflix-app/MainCenter";
 import Home from "./components/Mbti-app/Home";
+import Question from "./components/Mbti-app/Question";
+import Result from "./components/Mbti-app/Result";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="/movie/now" element={<NowPlaying></NowPlaying>} />
           <Route path="/netflix" element={<MainCenter></MainCenter>} />
           <Route path="/mbti" element={<Home></Home>} />
+          <Route path="/mbti/question" element={<Question></Question>} />
+          <Route path="/mbti/result" element={<Result></Result>} />
         </Routes>
         <Footer></Footer>
       </div>

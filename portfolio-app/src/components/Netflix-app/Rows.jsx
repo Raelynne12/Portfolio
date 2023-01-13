@@ -36,7 +36,7 @@ export default function Rows({ title, fetchURL, type, showNum, showVideo }) {
         >
           {movies.map((item, idx) => {
             return (
-              <div className="swiper-box">
+              <div className="swiper">
                 <SwiperSlide>
                   <MovieItem
                     title={item.title ? item.title : item.name}

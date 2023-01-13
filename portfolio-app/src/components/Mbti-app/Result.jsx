@@ -1,5 +1,75 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { ResultData } from "../../assets/data/Result";
+import styled from "styled-components";
 
 export default function Result() {
-  return <div></div>;
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const mbti = searchParams.get("mbti");
+  const [result, setResult] = useState({});
+  useEffect(() => {
+    const selectedCat = ResultData.find((item, idx) => {
+      return item.best === mbti;
+    });
+    setResult(selectedCat);
+  }, [mbti]);
+
+  return (
+    <Container>
+      <Title>MBTI 테스트 결과는 ?</Title>
+      <LogoImg>
+        <img src={result.image} alt={result.name} />
+      </LogoImg>
+      <Results>{result.name}</Results>
+      <Desc>{result.desc}</Desc>
+      <Button onClick={() => navigate("/mbti")}>TEST AGAIN</Button>
+    </Container>
+  );
 }
+const Container = styled.div`
+  background-color: #000;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+const LogoImg = styled.div`
+  img {
+    width: 400px;
+    box-shadow: 30px 30px 30px rgb(0, 0, 0, 0.8);
+  }
+`;
+const Title = styled.div`
+  color: #fff;
+  font-size: clamp(60px, 5vw, 80px);
+  margin-top: 150px;
+  margin-bottom: 160px;
+`;
+const Results = styled.h2`
+  color: #fff;
+  margin-top: 70px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  font-size: clamp(75px, 4vw, 88px);
+`;
+const Desc = styled.div`
+  color: #fff;
+  margin: 100px 300px 70px 300px;
+  line-height: 1.5;
+  font-size: 40px;
+  font-family: PuradakGentleGothicR;
+`;
+const Button = styled.div`
+  background-color: #dffe2b;
+  color: #000;
+  font-size: 40px;
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 100px;
+  font-weight: bold;
+  &:hover {
+    color: #fff;
+  }
+  cursor: pointer;
+`;
