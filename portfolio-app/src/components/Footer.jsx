@@ -10,7 +10,7 @@ export default function Footer() {
 }
 const Container = styled.footer`
   background-color: #000;
-  height: 50px;
+  height: 20px;
   display: flex;
   //position: absolute;
   transform: translateY(-100%);
@@ -21,7 +21,7 @@ const Container = styled.footer`
   opacity: 0.6;
   p {
     padding: 5px 40px;
-    font-size: 20px;
+    font-size: 12px;
     color: #fff;
   }
 `;

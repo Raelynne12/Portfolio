@@ -8,11 +8,11 @@ export default function Day() {
   const { day } = useParams();
   const [vocas, setVocas] = useState([]);
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:3000/vocas?day=${day}`)
-      .then((res) => setVocas(res.data));
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get(`http://localhost:3000/vocas?day=${day}`)
+  //     .then((res) => setVocas(res.data));
+  // }, []);
 
   const onDelete = (id) => {
     axios.delete(`'http://localhost:3000/vocas/${id}`).then((res) => {

@@ -25,9 +25,9 @@ export default function Header() {
   );
 }
 const Container = styled.div`
-  height: 45px;
+  height: 35px;
   display: fixed;
-  /* opacity: 0.3; */
+  opacity: 0.7;
   flex-direction: row;
   background-color: #9c9c9c;
   align-items: center;
@@ -39,37 +39,30 @@ const Container = styled.div`
     }
   }
   .back {
-    font-size: 15px;
-    display: flex;
-    color: #4c4c4c;
-    border: none;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    outline: none;
-    background-color: none;
-    justify-content: center;
-    align-items: center;
-    margin-right: 140px;
-    i {
-      font-size: 25px;
-      color: #000;
-      margin-left: 140px;
-    }
-  }
-  .front {
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     color: #000;
     border: none;
     left: 0;
     width: 60px;
-    /* height: 60px; */
     outline: none;
     background-color: none;
     justify-content: center;
     align-items: center;
-    margin-left: 70px;
+    margin-right: 50px;
+  }
+  .front {
+    font-size: 20px;
+    display: flex;
+    color: #000;
+    border: none;
+    left: 0;
+    width: 60px;
+    outline: none;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
   }
 `;
 const Head = styled.header`
@@ -78,6 +71,7 @@ const Head = styled.header`
   }
   color: #000;
   opacity: 1;
-  font-size: 25px;
+  letter-spacing: 1px;
+  font-size: 20px;
   font-weight: bold;
 `;
