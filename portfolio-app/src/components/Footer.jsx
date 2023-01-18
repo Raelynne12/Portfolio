@@ -10,7 +10,7 @@ export default function Footer() {
 }
 const Container = styled.footer`
   background-color: #000;
-  height: auto;
+  height: 50px;
   display: flex;
   //position: absolute;
   transform: translateY(-100%);

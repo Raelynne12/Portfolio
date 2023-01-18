@@ -25,7 +25,7 @@ export default function Header() {
   );
 }
 const Container = styled.div`
-  height: 75px;
+  height: 45px;
   display: fixed;
   /* opacity: 0.3; */
   flex-direction: row;
@@ -39,7 +39,7 @@ const Container = styled.div`
     }
   }
   .back {
-    font-size: 20px;
+    font-size: 15px;
     display: flex;
     color: #4c4c4c;
     border: none;
@@ -52,19 +52,19 @@ const Container = styled.div`
     align-items: center;
     margin-right: 140px;
     i {
-      font-size: 40px;
+      font-size: 25px;
       color: #000;
       margin-left: 140px;
     }
   }
   .front {
-    font-size: 40px;
+    font-size: 25px;
     display: flex;
     color: #000;
     border: none;
     left: 0;
     width: 60px;
-    height: 60px;
+    /* height: 60px; */
     outline: none;
     background-color: none;
     justify-content: center;
@@ -78,6 +78,6 @@ const Head = styled.header`
   }
   color: #000;
   opacity: 1;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: bold;
 `;

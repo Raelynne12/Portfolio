@@ -36,7 +36,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 2000px;
-  height: 900px;
   margin: 100px auto;
   margin-top: 200px;
   h2 {

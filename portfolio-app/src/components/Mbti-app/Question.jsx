@@ -37,7 +37,6 @@ export default function Question() {
 
   return (
     <Container>
-      <Header>MBTI TEST</Header>
       <Progress>
         <div className="inner">
           <div
@@ -49,6 +48,7 @@ export default function Question() {
       <Title>{QuestionData[questionNo].title}</Title>
       <Buttons>
         <Button
+          className="left"
           onClick={() => {
             onClick(1, QuestionData[questionNo].type);
           }}
@@ -56,6 +56,7 @@ export default function Question() {
           {QuestionData[questionNo].answera}
         </Button>
         <Button
+          className="right"
           onClick={() => {
             onClick(0, QuestionData[questionNo].type);
           }}
@@ -67,22 +68,24 @@ export default function Question() {
   );
 }
 const Progress = styled.div`
-  padding: 0 30px;
+  padding: 0 60px 0 60px;
+  opacity: 0.5;
   width: 100%;
-  margin-top: 100px;
+  margin-top: 200px;
   box-sizing: border-box;
   .inner {
     width: 100%;
     border-radius: 15px;
-    height: 15px;
-    border: 2px solid #000;
+    height: 35px;
+    margin: 20px 40px 50px 50px;
+    border: 5px solid #000;
     background-color: #fff;
     overflow: hidden;
     .bar {
-      background-color: #f535bb;
+      background-color: #f8e924f9;
       height: 100%;
       transition: all 0.25s ease;
-      border-right: 2px solid #000;
+      border-right: 5px solid #000;
     }
   }
 `;
@@ -99,40 +102,41 @@ const Buttons = styled.div`
 
 const Button = styled.button`
   outline: none;
-  background-color: #fff;
+  background-color: #f8e924f9;
   padding: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
   border-radius: 10px;
-  font-size: 18px;
   color: #000;
-  font-size: 17px;
+  font-size: 27px;
   font-weight: 500;
   font-family: inherit;
-  margin: 0 5px;
+  .left {
+    margin-left: 500px;
+  }
+  .right {
+    margin-right: 500px;
+  }
   width: calc(50% - 10px);
   word-break: keep-all;
   flex-grow: 0;
   flex-shrink: 0;
-  border: 5px dotted #000;
+  border: 7px dashed #000;
 `;
 
 const Container = styled.div`
-  //display: flex;
-  background-color: #ecaedf;
+  display: flex;
+  flex-direction: column;
+  margin: 0 200px 200px 200px;
 `;
 const Title = styled.h2`
-  align-items: center;
-  justify-content: center;
-  margin-top: 90px;
-  font-size: clamp(24px, 5vw, 48px);
-  word-break: keep-all;
-`;
-const Header = styled.header`
   display: flex;
-  background-color: #f172cb;
-  border-bottom: 3px solid #000;
-  font-size: 25px;
-  color: #000;
   align-items: center;
+  line-height: 1.5;
   justify-content: center;
-  height: 50px;
+  margin: 100px 300px 100px 300px;
+  color: #fff;
+  letter-spacing: 10px;
+  font-size: clamp(20px, 4vw, 60px);
+  word-break: keep-all;
 `;

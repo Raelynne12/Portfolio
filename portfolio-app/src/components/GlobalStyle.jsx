@@ -51,8 +51,6 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
 }
 *,*:before ,*:after {
-    /* background-image: url("../assets/images/universe.jpg"); */
-    
     box-sizing: border-box; 
     margin: 0;
     padding:0;

@@ -15,11 +15,15 @@ import MainCenter from "./components/Netflix-app/MainCenter";
 import Home from "./components/Mbti-app/Home";
 import Question from "./components/Mbti-app/Question";
 import Result from "./components/Mbti-app/Result";
+// import Days from "./components/Voca-app-client/Days";
+// import InsertVoca from "./components/Voca-app-client/InsertVoca";
+// import InsertDay from "./components/Voca-app-client/InsertDay";
+// import Day from "./components/Voca-app-client/Day";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App" style={{ width: "100%" }}>
         <GlobalStyle></GlobalStyle>
         <Header></Header>
         <Routes>
@@ -39,6 +43,10 @@ function App() {
           <Route path="/mbti" element={<Home></Home>} />
           <Route path="/mbti/question" element={<Question></Question>} />
           <Route path="/mbti/result" element={<Result></Result>} />
+          {/* <Route path="/voca" element={<Days></Days>} />
+          <Route path="/voca/insert/voca" element={<InsertVoca></InsertVoca>} />
+          <Route path="/voca/insert/day" element={<InsertDay></InsertDay>} />
+          <Route path="/voca/day/:day" element={<Day></Day>} /> */}
         </Routes>
         <Footer></Footer>
       </div>

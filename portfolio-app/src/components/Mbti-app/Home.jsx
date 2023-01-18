@@ -8,12 +8,11 @@ export default function Home() {
 
   return (
     <Container>
-      <Header>MBTI TEST</Header>
       <Title>
-        <h2 className="title">심리테스트</h2>
+        <h2 className="title">MBTI TEST</h2>
       </Title>
       <LogoImg>
-        <img src={logo} alt="" style={{ width: "40%", borderRadius: "15%" }} />
+        <img src={logo} alt="" style={{ borderRadius: "15%" }} />
       </LogoImg>
       <Button
         onClick={() => {
@@ -27,46 +26,65 @@ export default function Home() {
 }
 const Button = styled.button`
   font-family: inherit;
-  font-size: 20px;
+  font-size: 22px;
   border: none;
   outline: none;
   background-color: #000;
   color: #fff;
   padding: 15px 20px;
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+  width: 200px;
+  height: 80px;
+  &:hover {
+    color: #f4c210;
+  }
 `;
 
 const LogoImg = styled.div`
+  @keyframes ball {
+    0% {
+      opacity: 0.2;
+    }
+    55% {
+      opacity: 0.7;
+    }
+    to {
+      opacity: 0.9;
+    }
+  }
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   opacity: 100%;
   margin-top: 80px;
   margin-bottom: 30px;
   img {
-    filter: brightness(90%);
+    filter: brightness(80%);
+    width: 500px;
+    animation: ball 0.8s ease-in infinite alternate;
   }
 `;
 
 const Container = styled.div`
   height: 100%;
-  background-color: #ecaedf;
   justify-content: center;
   align-items: center;
-`;
-const Header = styled.header`
   display: flex;
-  background-color: #f172cb;
-  border-bottom: 3px solid #000;
-  font-size: 25px;
-  color: #000;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
+  flex-direction: column;
 `;
 const Title = styled.h2`
   align-items: center;
   justify-content: center;
-  margin-top: 80px;
-  font-size: clamp(24px, 5vw, 48px);
+  margin-top: 220px;
+  margin-bottom: 100px;
   word-break: keep-all;
+  h2 {
+    color: #fff;
+    letter-spacing: 10px;
+    font-size: clamp(100px, 4vw, 200px);
+  }
 `;
