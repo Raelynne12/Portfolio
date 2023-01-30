@@ -40,7 +40,7 @@ export default function VideoBox({ viewChange, videoId }) {
 }
 const Container = styled.div`
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.553);
   left: 0;
   top: 0;
   display: flex;
@@ -50,8 +50,8 @@ const Container = styled.div`
   height: 100vh;
   z-index: 999;
   iframe {
-    width: 1920px;
-    height: calc(1920px * (9 / 16));
+    width: 1020px;
+    height: calc(1020px * (9 / 16));
   }
   button {
     position: absolute;

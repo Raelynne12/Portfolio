@@ -26,6 +26,7 @@ export default function PopularVideo({ id, selectVideo, scrollTop }) {
   );
 }
 const Container = styled.div`
+  width: 100%;
   cursor: pointer;
   padding: 10px 20px;
   .video {
@@ -48,23 +49,23 @@ const Container = styled.div`
       img {
         vertical-align: top;
         padding: 20px 20px 20px 20px;
-        width: 400px;
+        width: 250px;
       }
     }
     .info {
-      margin: 30px 30px 30px 30px;
-      border-left: 7px dotted #000;
-      padding-left: 30px;
+      margin: 20px 20px 20px 20px;
+      border-left: 3px dotted #000;
+      padding-left: 20px;
       h3 {
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 500;
         margin-bottom: 20px;
         margin-top: 20px;
       }
       p {
-        border-top: 6px solid #858585;
-        padding-top: 30px;
-        font-size: 25px;
+        border-top: 3px solid #858585;
+        padding-top: 20px;
+        font-size: 12px;
         font-family: face;
         line-height: 1.5;
       }

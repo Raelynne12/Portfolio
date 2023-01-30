@@ -39,23 +39,29 @@ const Container = styled.div`
   color: #fff;
   justify-content: center;
   align-items: center;
-  width: 2000px;
+  width: 100%;
   //height: 900px;
   margin: 100px auto;
 `;
 const Title = styled.h2`
   p {
     &:hover {
-      color: #fff;
+      color: #f2f677;
     }
   }
   display: flex;
   flex-direction: row;
-  font-size: clamp(40px, 4vw, 68px);
+  font-size: clamp(20px, 4vw, 40px);
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
   justify-content: space-between;
   color: #961111;
   margin-bottom: 50px;
+  .now-play {
+    margin-right: 90px;
+  }
+  .popular {
+    margin-left: 90px;
+  }
 `;

@@ -25,8 +25,8 @@ const Head = styled.div`
     font-weight: bold;
     color: #08eaff;
     position: relative;
-    font-size: clamp(70px, 4vw, 88px);
-    margin-bottom: 230px;
-    margin-top: 220px;
+    font-size: clamp(50px, 4vw, 88px);
+    margin-bottom: 100px;
+    margin-top: 150px;
   }
 `;

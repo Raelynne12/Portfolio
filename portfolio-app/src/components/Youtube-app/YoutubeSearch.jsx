@@ -37,20 +37,20 @@ export default function YoutubeSearch({ onSearch }) {
 }
 const Container = styled.div`
   position: absolute;
-  right: 450px;
-  font-size: 30px;
-  top: 3px;
+  right: 20px;
+  font-size: 12px;
+  top: 5px;
   padding: 3px 5px;
   padding-right: 10px;
   background-color: #fff;
   margin-right: 70px;
-  border: 5px solid #7e7e7e;
+  border: 2px solid #7e7e7e;
   box-sizing: border-box;
   input {
     border: none;
     outline: none;
-    font-size: 20px;
-    width: 400px;
+    font-size: 12px;
+    width: 200px;
     height: 30px;
     background: none;
     color: #000;
@@ -59,7 +59,7 @@ const Container = styled.div`
     cursor: pointer;
     border: none;
     outline: none;
-    font-size: 30px;
+    font-size: 15px;
     background: none;
     color: #7e7e7e;
   }

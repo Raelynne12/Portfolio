@@ -65,8 +65,9 @@ const Container = styled.section`
   overflow: hidden;
   margin: 100px auto 150px;
   padding-bottom: 80px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
   .wrapper {
     width: 1400px;
     margin: auto;
@@ -76,7 +77,7 @@ const Container = styled.section`
     width: 1400px;
   }
   h2 {
-    font-size: 60px;
+    font-size: 30px;
     margin-bottom: 50px;
     text-transform: capitalize;
     color: #f2f677;
@@ -91,14 +92,14 @@ const Container = styled.section`
     color: #fff;
 
     i {
-      font-size: 97px;
+      font-size: 40px;
     }
   }
   .prev {
-    left: -100px;
+    left: 10px;
   }
   .next {
-    right: -100px;
+    left: 92%;
   }
   .swiper-pagination {
     bottom: -80px !important;

@@ -21,11 +21,13 @@ export default function Certification() {
   );
 }
 const Certificate = styled.div`
-  border-top: 12px dotted #fff;
-  margin-top: 40px;
-  width: 400px;
+  border-top: 4px dotted #fff;
+  margin-top: 20px;
+  width: clamp(285px, 4vw, 395px);
+  display: flex;
+  flex-direction: column;
   .lists {
-    margin-top: 60px;
+    margin-top: 30px;
     p {
       margin-bottom: 30px;
     }

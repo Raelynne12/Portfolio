@@ -54,7 +54,7 @@ const Contain = styled.div`
       opacity: 0.2;
       box-shadow: 30px 30px 30px rgb(0, 0, 0, 0.9);
     }
-    55% {
+    45% {
       opacity: 0.7;
     }
     to {
@@ -64,8 +64,9 @@ const Contain = styled.div`
   @keyframes ball2 {
     0% {
       box-shadow: 30px 30px 30px rgb(0, 0, 0, 0.9);
+      opacity: 0.2;
     }
-    55% {
+    65% {
       opacity: 0.7;
     }
     to {
@@ -114,6 +115,6 @@ const Contain = styled.div`
     background-position: absolute;
     background-position-x: -105px;
     background-position-y: -30px;
-    box-shadow: 35px 35px 35px rgba(0, 0, 0, 0.5);
+    box-shadow: -35px 35px 35px rgba(0, 0, 0, 0.5);
   }
 `;

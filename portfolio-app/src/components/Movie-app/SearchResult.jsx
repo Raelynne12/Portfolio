@@ -35,13 +35,13 @@ const Container = styled.div`
   color: #fff;
   justify-content: center;
   align-items: center;
-  width: 2000px;
+  width: 100%;
   margin: 100px auto;
-  margin-top: 200px;
+  margin-top: 150px;
   h2 {
     display: flex;
     flex-direction: row;
-    font-size: clamp(60px, 4vw, 88px);
+    font-size: clamp(30px, 4vw, 50px);
     text-transform: uppercase;
     font-weight: 800;
     text-align: center;

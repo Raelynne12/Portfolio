@@ -16,88 +16,110 @@ import style from "../../assets/images/styled.png";
 export default function Stack() {
   return (
     <Stacks>
-      <li className="front">
+      <div className="front">
         <h3>Frontend</h3>
-        <div className="html">
-          <img src={html} alt=""></img>
-          <p>html</p>
-        </div>
-        <div className="css">
-          <img src={css} alt=""></img>
-          <p>css</p>
-        </div>
-        <div className="javascript">
-          <img src={js} alt=""></img>
-          <p>javascript</p>
-        </div>
-        <div className="es6">
-          <img src={es6} alt=""></img>
-          <p>es6</p>
-        </div>
-        <div className="sass">
-          <img src={sass} alt=""></img>
-          <p>sass</p>
-        </div>
-        <div className="styled">
-          <img src={style} alt=""></img>
-          <p>styled-components</p>
-        </div>
-        <div className="react">
-          <img src={react} alt=""></img>
-          <p>react</p>
-        </div>
-        <div className="redux">
-          <img src={redux} alt=""></img>
-          <p>redux</p>
-        </div>
-        <div className="jquery">
-          <img src={jquery} alt=""></img>
-          <p>jquery</p>
-        </div>
-      </li>
-      <li className="deployment">
-        <h3>Deployment</h3>
-        <div className="netlify">
-          <img src={netlify} alt=""></img>
-          <p>netlify</p>
-        </div>
-      </li>
-      <li className="version-control">
+        <table width={290} border="0" align="center">
+          <tr className="front-stack">
+            <th>html</th>
+            <th>css</th>
+            <th>js</th>
+            <th>es6</th>
+            <th>style</th>
+          </tr>
+          <tr>
+            <th>
+              <img src={html} alt=""></img>
+            </th>
+            <th>
+              <img src={css} alt=""></img>
+            </th>
+            <th>
+              <img src={js} alt=""></img>
+            </th>
+            <th>
+              <img src={es6} alt=""></img>
+            </th>
+            <th>
+              <img src={style} alt=""></img>
+            </th>
+          </tr>
+          <tr className="front-stack">
+            <th>sass</th>
+            <th>react</th>
+            <th>redux</th>
+            <th>jquery</th>
+          </tr>
+          <tr>
+            <th>
+              <img src={sass} alt=""></img>
+            </th>
+            <th>
+              <img src={react} alt=""></img>
+            </th>
+            <th>
+              <img src={redux} alt=""></img>
+            </th>
+            <th>
+              <img src={jquery} alt=""></img>
+            </th>
+          </tr>
+        </table>
+      </div>
+      <div className="version-control">
         <h3>Version-control</h3>
-        <div className="github">
-          <img src={github} alt=""></img>
-          <p>github</p>
-        </div>
-        <div className="git">
-          <img src={git} alt=""></img>
-          <p>git</p>
-        </div>
-      </li>
+        <table width={290} border="0" align="center">
+          <tr className="front-stack">
+            <th>git</th>
+            <th>github</th>
+            <th>netlify</th>
+          </tr>
+          <tr>
+            <th>
+              <img src={git} alt=""></img>
+            </th>
+            <th>
+              <img src={github} alt=""></img>
+            </th>
+            <th>
+              <img src={netlify} alt=""></img>
+            </th>
+          </tr>
+        </table>
+      </div>
     </Stacks>
   );
 }
-const Stacks = styled.ul`
-  border-top: 12px dotted #fff;
-  margin-top: 40px;
-  width: 1800px;
+const Stacks = styled.div`
+  border-top: 4px dotted #fff;
+  margin-top: 20px;
+  width: clamp(600px, 4vw, 395px);
   display: flex;
   flex-direction: column;
-  li {
+  .front .deployment .version-control {
     padding: 20px 35px 10px 35px;
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
+    flex-shrink: 1;
+  }
+  .front {
+    margin-top: 10px;
+  }
+  .version-control {
+    margin-top: 40px;
   }
   h3 {
     color: #fff;
-    font-size: 40px;
+    font-size: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-family: ScORE;
     display: grid;
+    margin-left: 20px;
+    font-weight: bold;
   }
   img {
     margin: 10px 30px 10px 30px;
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
   }
 `;

@@ -26,17 +26,17 @@ export default function Home() {
 }
 const Button = styled.button`
   font-family: inherit;
-  font-size: 22px;
+  font-size: 15px;
   border: none;
   outline: none;
   background-color: #000;
   color: #fff;
-  padding: 15px 20px;
+  padding: 5px 10px;
   margin-top: 30px;
   margin-bottom: 100px;
-  border-radius: 15px;
-  width: 200px;
-  height: 80px;
+  border-radius: 55px;
+  width: 150px;
+  height: 50px;
   &:hover {
     color: #f4c210;
   }
@@ -64,7 +64,7 @@ const LogoImg = styled.div`
   margin-bottom: 30px;
   img {
     filter: brightness(80%);
-    width: 500px;
+    width: 200px;
     animation: ball 0.8s ease-in infinite alternate;
   }
 `;
@@ -79,12 +79,12 @@ const Container = styled.div`
 const Title = styled.h2`
   align-items: center;
   justify-content: center;
-  margin-top: 220px;
-  margin-bottom: 100px;
+  margin-top: 120px;
+  margin-bottom: 50px;
   word-break: keep-all;
   h2 {
     color: #fff;
     letter-spacing: 10px;
-    font-size: clamp(100px, 4vw, 200px);
+    font-size: clamp(50px, 4vw, 100px);
   }
 `;

@@ -51,62 +51,6 @@ export default function MovieItem({
 }
 
 const Container = styled.div`
-  .main {
-    height: 100vh;
-    text-align: left;
-    .img {
-      position: relative;
-      :before {
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-    }
-    img {
-      width: 100%;
-      height: 100vh;
-      object-fit: cover;
-    }
-    .info {
-      padding-left: 350px;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 200px;
-      h2 {
-        font-size: 80px;
-        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-      }
-      .btns {
-        margin: 20px 0;
-        button {
-          cursor: pointer;
-          padding: 15px;
-          background-color: #9e1111;
-          color: #fff;
-          font-size: 26px;
-          border-radius: 5px;
-          margin-right: 5px;
-          text-transform: uppercase;
-          font-weight: 500;
-        }
-      }
-      p {
-        line-height: 2;
-        padding-top: 20px;
-        max-width: 1200px;
-        font-size: 25px;
-        font-family: PuradakGentleGothicR;
-        word-break: keep-all;
-      }
-    }
-  }
   .banner {
     height: auto;
     text-align: left;
@@ -126,12 +70,13 @@ const Container = styled.div`
       background-color: #fff;
       color: #000;
       box-sizing: border-box;
-      padding: 20px;
+      padding: 10px;
       padding-bottom: 30px;
+      width: 100%;
       h2 {
-        border-top: 5px dashed #000;
+        border-top: 3px dashed #000;
         padding-top: 14px;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 500;
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
         line-height: 1.5;
@@ -139,9 +84,6 @@ const Container = styled.div`
         color: #000;
         overflow: hidden;
         margin-bottom: -15px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
       }
       .btns {
         margin: 20px 0;
@@ -149,7 +91,7 @@ const Container = styled.div`
           cursor: pointer;
           padding: 5px;
           background-color: #fff;
-          font-size: 14px;
+          font-size: 10px;
           border-radius: 5px;
           margin-right: 5px;
           text-transform: uppercase;
@@ -159,6 +101,7 @@ const Container = styled.div`
         }
       }
       p {
+        //width: 80%;
         line-height: 1.5;
         height: 4.5em;
         font-family: face;
@@ -166,7 +109,7 @@ const Container = styled.div`
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
-        font-size: 14px;
+        font-size: 11px;
         word-break: keep-all;
       }
     }

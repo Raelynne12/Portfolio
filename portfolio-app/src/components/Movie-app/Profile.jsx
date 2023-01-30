@@ -28,11 +28,11 @@ export default function Profile({ img, name, gender, id }) {
   );
 }
 const ProfileImg = styled.div`
-  background-color: #fff;
-  width: 200px;
+  //background-color: #fff;
+  width: 150px;
 `;
 const ProfileInfo = styled.div`
-  font-size: 18px;
+  font-size: 13px;
   text-align: center;
   margin-top: 5px;
 `;

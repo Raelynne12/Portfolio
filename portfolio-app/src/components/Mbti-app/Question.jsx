@@ -68,24 +68,26 @@ export default function Question() {
   );
 }
 const Progress = styled.div`
-  padding: 0 60px 0 60px;
-  opacity: 0.5;
-  width: 100%;
-  margin-top: 200px;
+  //padding: 0 100px 0 100px;
+  //width: 100%;
+  display: flex;
+  left: 80px;
+  opacity: 0.7;
+  margin-top: 80px;
   box-sizing: border-box;
   .inner {
     width: 100%;
     border-radius: 15px;
-    height: 35px;
-    margin: 20px 40px 50px 50px;
-    border: 5px solid #000;
+    height: 25px;
+    margin: 20px 240px 50px 240px;
+    border: 2px solid #000;
     background-color: #fff;
     overflow: hidden;
     .bar {
-      background-color: #f8e924f9;
+      background-color: #b82a17;
       height: 100%;
       transition: all 0.25s ease;
-      border-right: 5px solid #000;
+      border-right: 3px solid #000;
     }
   }
 `;
@@ -102,14 +104,14 @@ const Buttons = styled.div`
 
 const Button = styled.button`
   outline: none;
-  background-color: #f8e924f9;
+  background-color: #d5cb37ce;
   padding: 10px;
   margin-right: 50px;
   margin-left: 50px;
   border-radius: 10px;
   color: #000;
-  font-size: 27px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: lighter;
   font-family: inherit;
   .left {
     margin-left: 500px;
@@ -117,26 +119,27 @@ const Button = styled.button`
   .right {
     margin-right: 500px;
   }
-  width: calc(50% - 10px);
+  width: calc(20% - 10px);
   word-break: keep-all;
   flex-grow: 0;
   flex-shrink: 0;
-  border: 7px dashed #000;
+  border: 4px dashed #000;
 `;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 200px 200px 200px;
+  margin: 0 50px 50px 50px;
 `;
 const Title = styled.h2`
   display: flex;
   align-items: center;
+  text-align: center;
   line-height: 1.5;
   justify-content: center;
-  margin: 100px 300px 100px 300px;
+  margin: 100px 200px 0px 200px;
   color: #fff;
-  letter-spacing: 10px;
-  font-size: clamp(20px, 4vw, 60px);
+  letter-spacing: 5px;
+  font-size: clamp(10px, 4vw, 20px);
   word-break: keep-all;
 `;

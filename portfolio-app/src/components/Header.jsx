@@ -29,19 +29,20 @@ const Container = styled.div`
   display: fixed;
   opacity: 0.7;
   flex-direction: row;
-  background-color: #9c9c9c;
+  /* background-color: #0b0b2a; */
   align-items: center;
   justify-content: center;
   button {
     cursor: pointer;
     &:hover {
-      transform: translateY(-5px);
+      //transform: translateY(-5px);
+      color: #dade21;
     }
   }
   .back {
     font-size: 20px;
     display: flex;
-    color: #000;
+    color: #ffffff;
     border: none;
     left: 0;
     width: 60px;
@@ -54,7 +55,7 @@ const Container = styled.div`
   .front {
     font-size: 20px;
     display: flex;
-    color: #000;
+    color: #ffffff;
     border: none;
     left: 0;
     width: 60px;
@@ -67,9 +68,9 @@ const Container = styled.div`
 `;
 const Head = styled.header`
   &:hover {
-    color: #fff;
+    color: #af1414;
   }
-  color: #000;
+  color: #ffffff;
   opacity: 1;
   letter-spacing: 1px;
   font-size: 20px;

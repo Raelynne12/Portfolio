@@ -37,39 +37,40 @@ const Container = styled.div`
 `;
 const LogoImg = styled.div`
   img {
-    width: 400px;
+    width: 200px;
     box-shadow: 30px 30px 30px rgb(0, 0, 0, 0.8);
   }
 `;
 const Title = styled.div`
   color: #fff;
-  font-size: clamp(60px, 5vw, 80px);
-  margin-top: 150px;
+  font-size: clamp(20px, 5vw, 40px);
+  margin-top: 100px;
   margin-bottom: 160px;
 `;
 const Results = styled.h2`
   color: #fff;
   margin-top: 70px;
   font-weight: bold;
-  letter-spacing: 20px;
-  font-size: clamp(75px, 4vw, 88px);
+  letter-spacing: 10px;
+  font-size: clamp(25px, 4vw, 48px);
 `;
 const Desc = styled.div`
   color: #fff;
   margin: 100px 300px 70px 300px;
   line-height: 1.5;
-  font-size: 40px;
+  font-size: 15px;
   font-family: PuradakGentleGothicR;
 `;
 const Button = styled.div`
   background-color: #dffe2b;
   color: #000;
-  font-size: 40px;
-  padding: 20px 20px 20px 20px;
+  font-size: 14px;
+  padding: 10px 10px 10px 10px;
   margin-bottom: 100px;
+  border-radius: 5px;
   font-weight: bold;
   &:hover {
-    color: #fff;
+    background-color: #fff;
   }
   cursor: pointer;
 `;

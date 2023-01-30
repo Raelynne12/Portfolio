@@ -33,7 +33,7 @@ export default function ProfileDetail() {
       });
   }, [profileId]);
   return (
-    <>
+    <Entire>
       <Search></Search>
       <Name>{detail.name}</Name>
       <Container>
@@ -46,7 +46,6 @@ export default function ProfileDetail() {
           </div>
           <div className="info">
             <div className="title-box">
-              <h3>{detail.original_title}</h3>
               <p className="original-title">{detail.original_title}</p>
               <p className="open-date">{detail.release_date}</p>
             </div>
@@ -102,7 +101,7 @@ export default function ProfileDetail() {
                 <dd>
                   <Swiper
                     className="cast-list"
-                    spaceBetween={100}
+                    spaceBetween={10}
                     slidesPerView={"auto"}
                   >
                     {movies.map((item, idx) => {
@@ -126,24 +125,28 @@ export default function ProfileDetail() {
           </div>
         </div>
       </Container>
-    </>
+    </Entire>
   );
 }
 const Name = styled.h2`
-  font-size: clamp(80px, 4vw, 100px);
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  font-size: clamp(40px, 4vw, 50px);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 800;
   text-align: center;
-  color: #b41515;
-  margin-top: 160px;
-  font-weight: bold;
-  margin-bottom: 80px;
+  justify-content: center;
+  color: #a51717;
+  margin-bottom: 50px;
+`;
+const Entire = styled.div`
+  width: 100%;
 `;
 const Container = styled.div`
-  margin-left: 170px;
+  margin-left: 50px;
   margin-bottom: 40px;
-  margin-right: 170px;
-  background-color: #fff;
+  margin-right: 110px;
   .bg {
     position: fixed;
     left: 0;
@@ -167,66 +170,77 @@ const Container = styled.div`
   .detail-box {
     display: flex;
     align-items: flex-start;
+    background-color: rgba(248, 248, 248, 0.7);
+    border-radius: 0 50px 0 50px;
+    margin-left: 70px;
+    //margin-right: 50px;
     .img-box {
       border-radius: 0 50px 0 50px;
-      border: 10px solid rgb(241, 241, 241);
+      border: 5px solid rgb(241, 241, 241);
       box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.3);
-      width: 500px;
+      height: 100%;
       box-sizing: border-box;
       overflow: hidden;
       flex-shrink: 0;
       img {
         vertical-align: top;
-        width: 500px;
+        width: 300px;
       }
     }
     .info {
-      background-color: rgba(248, 248, 248, 0.9);
-      margin-left: 50px;
+      margin-left: 0px;
       flex-grow: 1;
-      padding: 30px;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-right: 10px;
       border-radius: 50px 0 50px 0;
       .title-box {
         padding-bottom: 20px;
         margin-bottom: 20px;
         color: rgb(131, 131, 131);
         font-size: 20px;
-        h3 {
-          font-size: 60px;
-          font-weight: 700;
-          margin-bottom: 10px;
-          color: rgb(19, 19, 19);
-        }
       }
       .summary {
+        width: 920px;
         dl {
-          padding-bottom: 15px;
-          margin-bottom: 15px;
-          border-bottom: 4px dashed rgb(97, 97, 97);
-
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          border-bottom: 3px dashed rgb(97, 97, 97);
           dt {
             color: rgb(65, 65, 65);
-            font-size: 30px;
-            margin-bottom: 20px;
-            text-transform: uppercase;
+            font-size: 20px;
+            margin-bottom: 10px;
           }
           dd {
             color: rgb(27, 27, 27);
-            font-size: 24px;
+            font-size: 14px;
             font-weight: 500;
             margin-top: 10px;
           }
-          .desc {
-            font-size: 17px;
-          }
           .cast-list {
             overflow: hidden;
-            margin-top: 80px;
-            width: 2000px;
+            margin-top: 20px;
+            width: 900px;
             .item {
-              width: 150px;
+              width: 170px;
               img {
-                height: 350px;
+                width: 90%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+            .profile-info {
+              font-size: 13px;
+              text-align: center;
+              margin-top: 5px;
+            }
+          }
+          .movie-list {
+            overflow: hidden;
+            .item {
+              width: 120px;
+              img {
+                height: 100%;
                 object-fit: cover;
               }
             }

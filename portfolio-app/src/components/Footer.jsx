@@ -9,7 +9,7 @@ export default function Footer() {
   );
 }
 const Container = styled.footer`
-  background-color: #000;
+  background-color: #00000050;
   height: 20px;
   display: flex;
   //position: absolute;

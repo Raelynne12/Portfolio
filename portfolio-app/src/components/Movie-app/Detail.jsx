@@ -33,20 +33,19 @@ export default function Detail() {
       });
   }, [movieId]);
   return (
-    <>
+    <Entire>
       <Container>
         <Search></Search>
+        <h3 className="title">{detail.original_title}</h3>
         <div className="detail-box">
           <div className="img-box">
             <img
               src={`https://image.tmdb.org/t/p/w300/${detail.poster_path}`}
               alt=""
             ></img>
-            <span className="point">{detail.vote_average}</span>
           </div>
           <div className="info">
             <div className="title-box">
-              <h3 className="title">{detail.original_title}</h3>
               <p className="original-title">{detail.original_title}</p>
               <p className="open-date">{detail.release_date}</p>
             </div>
@@ -74,7 +73,7 @@ export default function Detail() {
                     fontFamily: `Chosunilbo_myungjo`,
                     fontWeight: `bold`,
                     lineHeight: 1.5,
-                    fontSize: `30px`,
+                    fontSize: `13px`,
                   }}
                 >
                   {detail.overview}
@@ -85,7 +84,7 @@ export default function Detail() {
                 <dd>
                   <Swiper
                     className="cast-list"
-                    spaceBetween={100}
+                    spaceBetween={30}
                     slidesPerView={"auto"}
                   >
                     {cast.map((item, idx) => {
@@ -114,15 +113,29 @@ export default function Detail() {
           }}
         ></div>
       </Container>
-    </>
+    </Entire>
   );
 }
+const Entire = styled.div`
+  width: 100%;
+`;
 const Container = styled.div`
-  margin-left: 170px;
-  margin-bottom: 40px;
-  margin-right: 170px;
-  background-color: #fff;
-  margin-top: 160px;
+  h3 {
+    display: flex;
+    flex-direction: row;
+    font-size: clamp(40px, 4vw, 50px);
+    text-transform: uppercase;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    color: #a51717;
+    margin-bottom: 90px;
+  }
+  width: 90%;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  margin-right: 570px;
+  margin-top: 120px;
   .bg {
     position: fixed;
     left: 0;
@@ -140,89 +153,93 @@ const Container = styled.div`
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.626);
     }
   }
   .detail-box {
     display: flex;
     align-items: flex-start;
+    background-color: rgba(248, 248, 248, 0.7);
+    border-radius: 0 50px 0 50px;
+    margin-left: 70px;
     .img-box {
       border-radius: 0 50px 0 50px;
-      border: 10px solid rgb(241, 241, 241);
+      border: 5px solid rgb(241, 241, 241);
       box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.3);
-      width: 500px;
+      height: 100%;
       box-sizing: border-box;
       overflow: hidden;
       flex-shrink: 0;
       img {
         vertical-align: top;
-        width: 500px;
+        width: 300px;
       }
     }
     .info {
-      background-color: rgba(248, 248, 248, 0.9);
-      margin-left: 50px;
+      margin-left: 0px;
+      //margin-right: 100px;
       flex-grow: 1;
-      padding: 30px;
+      padding-left: 30px;
+      padding-top: 10px;
+      padding-right: 10px;
       border-radius: 50px 0 50px 0;
       .title-box {
-        padding-bottom: 20px;
+        width: 920px;
+        padding-bottom: 10px;
+        margin-top: 20px;
         margin-bottom: 20px;
-        border-bottom: 4px dashed rgb(97, 97, 97);
-        color: rgb(131, 131, 131);
+        border-bottom: 3px dashed rgb(97, 97, 97);
+        color: rgb(82, 82, 82);
         font-size: 20px;
-        h3 {
-          font-size: 60px;
-          font-weight: 700;
+        .original-title {
+          color: #000;
           margin-bottom: 10px;
-          color: rgb(19, 19, 19);
+        }
+        .open-date {
+          font-size: 13px;
         }
       }
       .summary {
+        width: 920px;
         dl {
-          padding-bottom: 15px;
-          margin-bottom: 15px;
-          border-bottom: 4px dashed rgb(97, 97, 97);
+          padding-bottom: 10px;
+          margin-bottom: 10px;
+          border-bottom: 3px dashed rgb(97, 97, 97);
           dt {
             color: rgb(65, 65, 65);
-            font-size: 30px;
-            margin-bottom: 20px;
+            font-size: 20px;
+            margin-bottom: 10px;
           }
           dd {
             color: rgb(27, 27, 27);
-            font-size: 24px;
+            font-size: 14px;
             font-weight: 500;
             margin-top: 10px;
           }
-          .desc {
-            font-size: 17px;
-          }
           .cast-list {
             overflow: hidden;
-            margin-top: 50px;
-            width: 2000px;
+            margin-top: 20px;
+            width: 900px;
             .item {
               width: 120px;
               img {
                 width: 90%;
-                height: 250px;
+                height: 190px;
                 object-fit: cover;
               }
             }
             .profile-info {
-              font-size: 16px;
+              font-size: 13px;
               text-align: center;
               margin-top: 5px;
             }
           }
           .movie-list {
             overflow: hidden;
-            width: 1000px;
             .item {
               width: 120px;
               img {
-                width: 100%;
-                height: 300px;
+                height: 100%;
                 object-fit: cover;
               }
             }

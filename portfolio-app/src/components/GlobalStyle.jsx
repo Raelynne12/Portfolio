@@ -82,10 +82,10 @@ const GlobalStyle = createGlobalStyle`
   input[type="text"],textarea {
     outline: none;
     border:none;
-    background-color: #fff;
+    background: none;
     color:#111;
     border-radius: 5px;
-    min-height: 50px;
+    min-height: 30px;
     padding:0 15px;
   }
   select {

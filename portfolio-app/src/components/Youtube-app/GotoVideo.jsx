@@ -20,27 +20,27 @@ export default function GotoVideo({ id, title, description }) {
 }
 const Container = styled.div`
   box-shadow: 60px 60px 60px rgb(0, 0, 0, 0.5);
-  border: 5px solid #fff;
+  border: 3px solid #fff;
   background-color: #00000057;
   color: #fff;
-  margin-bottom: 150px;
-  margin: 200px 600px 100px 600px;
+  margin-bottom: 50px;
+  margin: 20px 60px 10px 60px;
   padding: 30px 50px 30px 50px;
   iframe {
     width: 100%;
     height: calc() (1400px * 0.7 * 9/16);
     //width: calc(33.33%-20px);
-    padding: 10px 300px 10px 300px;
+    padding: 10px 30px 10px 30px;
     font-size: 34px;
     font-size: 30px;
     margin-bottom: 10px;
   }
   h3 {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 20px;
     margin-top: 20px;
     justify-content: center;
-    align-items: center;
+    text-align: center;
   }
 `;

@@ -78,6 +78,64 @@ export default function MainVisual({ showVideo }) {
   );
 }
 const Container = styled.div`
+  margin-bottom: 300px;
+  .main {
+    height: 100vh;
+    text-align: left;
+    .img {
+      position: relative;
+      :before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .info {
+      padding-left: 250px;
+      color: #fff;
+      position: absolute;
+      top: 60%;
+      transform: translateY(-50%);
+      left: 0px;
+      h2 {
+        font-size: 30px;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .btns {
+        margin: 20px 0;
+        button {
+          cursor: pointer;
+          padding: 5px;
+          background-color: #9e1111;
+          color: #fff;
+          font-size: 15px;
+          border-radius: 5px;
+          margin-right: 5px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+      }
+      p {
+        line-height: 2;
+        padding-top: 10px;
+        max-width: 500px;
+        font-size: 15px;
+        font-family: PuradakGentleGothicR;
+        word-break: keep-all;
+      }
+    }
+  }
   height: 100vh;
   overflow: hidden;
   .nav {
@@ -90,7 +148,7 @@ const Container = styled.div`
     z-index: 2;
     color: #fff;
     i {
-      font-size: 96px;
+      font-size: 46px;
     }
   }
   .next {
@@ -101,7 +159,7 @@ const Container = styled.div`
     z-index: 2;
     color: #fff;
     i {
-      font-size: 96px;
+      font-size: 46px;
     }
   }
   .swiper-pagination {
@@ -112,12 +170,12 @@ const Container = styled.div`
     height: 20px;
     opacity: 1;
     background: none;
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     border-radius: 100px;
     transition: all 0.25 ease;
   }
   .swiper-pagination-bullet-active {
-    width: 80px;
+    width: 70px;
     background-color: #fff;
   }
 `;

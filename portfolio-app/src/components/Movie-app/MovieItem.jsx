@@ -13,7 +13,7 @@ export default function MovieItem({ poster, title, id }) {
               alt={title}
             />
           ) : (
-            <img src={none} alt={title} />
+            <img src={none} alt={title} style={{ height: "230px" }} />
           )}
         </div>
         <div className="movie-info">
@@ -24,5 +24,10 @@ export default function MovieItem({ poster, title, id }) {
   );
 }
 const Container = styled.div`
-  background-color: #fff;
+  //background-color: #fff;
+  .movie-info {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
 `;

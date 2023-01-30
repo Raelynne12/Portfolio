@@ -31,20 +31,21 @@ export default function Search() {
 }
 const Container = styled.div`
   position: absolute;
-  right: 450px;
-  top: 3px;
-  padding: 3px 5px;
+  right: 0;
+  top: 5px;
+  height: 30px;
+  margin: 0px 0px 25px 5px;
   padding-right: 10px;
   background-color: #fff;
-  margin-right: 70px;
-  border: 5px solid #7e7e7e;
+  margin-right: clamp(10px, 3vw, 130px);
+  border: 3px solid #7e7e7e;
   box-sizing: border-box;
+  padding-top: 0px;
   input {
     border: none;
     outline: none;
-    font-size: 20px;
-    width: 400px;
-    height: 30px;
+    font-size: 12px;
+    width: 200px;
     background: none;
     color: #000;
   }
@@ -52,7 +53,7 @@ const Container = styled.div`
     cursor: pointer;
     border: none;
     outline: none;
-    font-size: 30px;
+    font-size: 15px;
     background: none;
     color: #7e7e7e;
   }

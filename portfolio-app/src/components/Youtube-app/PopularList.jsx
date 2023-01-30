@@ -21,11 +21,12 @@ export default function PopularList({ videos, selectVideo, scrollTop }) {
   );
 }
 const Container = styled.div`
+  width: 100%;
   ul {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 0 440px 0 440px;
+    padding: 0 50px 0 50px;
   }
 `;
